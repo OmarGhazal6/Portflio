@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1 align="center">Registration</h1>
+
+<form action="Thankyou.html">
+
+    <table border="1" cellpadding="10"
+           cellspacing="0" align="center">
+
+        <tr>
+            <th colspan="2">Registration Form</th>
+        </tr>
+
+        <tr>
+            <td>First Name</td>
+            <td>
+                <input type="text" name="FirstName"
+                pattern="[A-Za-z]+"
+                title="Letters only" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Last Name</td>
+            <td>
+                <input type="text" name="LastName"
+                pattern="[A-Za-z]+"
+                title="Letters only" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Email</td>
+            <td>
+                <input type="email" name="Email" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Password</td>
+            <td>
+                <input type="password" name="Password"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}"
+                title="At least 8 characters, uppercase, lowercase, number and special character"
+                required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Repeat Password</td>
+            <td>
+                <input type="password" name="RepeatPassword"
+                minlength="8" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>User Picture</td>
+            <td><input type="file" name="Picture"></td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="Gender"
+                value="Male" required> Male
+
+                <input type="radio" name="Gender"
+                value="Female"> Female
+            </td>
+        </tr>
+
+        <tr>
+            <td>Faculty</td>
+            <td>
+                <select name="Faculty" required>
+                    <option value="">Choose Faculty</option>
+                    <option>Engineering</option>
+                    <option>Computer Science</option>
+                    <option>Medicine</option>
+                    <option>Dentistry</option>
+                    <option>Science</option>
+                    <option>Agriculture</option>
+                    <option>Education</option>
+                    <option>Commerce</option>
+                    <option>Pharmacy</option>
+                    <option>Veterinary Medicine</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Interests</td>
+            <td>
+                <input type="checkbox" name="Interest"
+                value="Swimming"> Swimming
+
+                <input type="checkbox" name="Interest"
+                value="Reading"> Reading
+
+                <input type="checkbox" name="Interest"
+                value="Programming"> Programming
+            </td>
+        </tr>
+
+        <tr>
+            <td>About You</td>
+            <td><textarea name="About"></textarea></td>
+        </tr>
+
+        <tr>
+            <td>Phone Number</td>
+            <td>
+                <input type="tel" name="Phone"
+                pattern="01(0|1|2|5)[0-9]{8}"
+                title="Enter a valid Egyptian phone number"
+                required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>GPA</td>
+            <td>
+                <input type="number" name="GPA"
+                min="0" max="4" step="0.1" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Date of Birth</td>
+            <td><input type="date" name="DOB"></td>
+        </tr>
+
+        <tr>
+            <td>Terms and Conditions</td>
+            <td>
+                <input type="checkbox" name="Terms" required>
+                I agree to the
+                <a href="Terms.html" target="_blank">
+                    Terms and Conditions
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+
+    </table>
+
+</form>
+
+</body>
+</html>
